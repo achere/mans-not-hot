@@ -9,6 +9,11 @@ body {
   justify-content: center;
   margin: 20rem 1rem;
 }
+@media handheld {
+  .keys {
+    margin:2rem 1rem;
+  }
+}
 .key {
   border: .1rem solid #000;
   margin: .5rem;
