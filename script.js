@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
   const removeTransition = function(e) {
     if (e.propertyName != 'transform') return;
     this.classList.remove('playing');
-    console.log(this.classList);
-    this.className='key';
   };
 
   window.addEventListener('keydown', function(e) {
