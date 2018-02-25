@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (e.propertyName != 'transform') return;
     this.classList.remove('playing');
   };
-  /*const testFun = function(e) {
-    console.log('testFun ', this.attributes['data-key'].value);
-  };*/
   const playSound = function(code) {
     const audio = document.querySelector(`audio[data-key="${code}"]`);
     const key = document.querySelector(`.key[data-key="${code}"]`);
