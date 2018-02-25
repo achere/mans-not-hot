@@ -7,7 +7,7 @@ body {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20rem 1rem;
+  margin: 2rem 1rem;
 }
 .key {
   border: .1rem solid #000;
