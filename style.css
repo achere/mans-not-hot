@@ -12,8 +12,8 @@ body {
 .key {
   border: .1rem solid #000;
   margin: .5rem;
-  padding: 1rem 0;
-  width: 10rem;
+  padding: .5rem 0 0 0;
+  width: 5rem;
   text-align: center;
   background: rgba(0,0,0,0.5);
   transition: all 0.07s ease;
@@ -36,11 +36,10 @@ body {
 }
 kbd {
   display: block;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #fff;
 }
 span {
-  font-size: 1.8rem;
   color: #a7d6e8;
   font-style: italic;
 }
