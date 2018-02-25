@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(e) {
   console.log('Man can never be hot!');
 
+  const keys = document.querySelectorAll('.key');
+  const removeTransition = function(e) {
+    if (e.propertyName != 'transform') return;
+    this.classList.remove('playing');
+    console.log(this.classList);
+    this.className='key';
+  };
+
   window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -10,15 +18,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
     key.classList.add('playing');
   });
 
-  const removeTransition = function(e) {
-    if (e.propertyName != 'transform') return;
-    this.classList.remove('playing');
-    console.log(this.classList);
-    this.className='key';
-  };
-
-  const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  console.log(keys);
-
 });
